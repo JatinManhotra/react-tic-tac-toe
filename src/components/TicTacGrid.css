@@ -1,0 +1,156 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 4rem;
+}
+
+.score-heading{
+    font-size: 2rem;
+    padding-top: 2rem;
+    text-decoration: underline;
+}
+
+.scoreboard{
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.tic-tac-container{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tic-tac-row{
+    display: flex;
+}
+
+.tic-tac-button{
+    width: 5.625rem;
+    height: 5.625rem;
+    border-radius: .5rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.tic-tac-button:disabled{
+    background-color: #ffffff;
+}
+
+.colorX{
+    color: #ffc51d ;
+}
+
+.colorO{
+    color: #60dafa ;
+}
+
+.game-status{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.reset{
+    font-size: 1rem;
+    padding: .8rem 1rem;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.game-modes{
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 3.125rem;
+    padding-bottom: 5rem;
+}
+
+.modes{
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    box-shadow: 4px 4px 0 black;
+}
+
+.modes:hover{
+    background-color: rgb(222, 222, 222);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-top: 2rem;
+  }
+
+  .scoreboard {
+    font-size: 1rem;
+  }
+
+  .tic-tac-button {
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 2rem;
+  }
+
+  .game-status {
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .reset {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.9rem;
+  }
+
+  .game-modes {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .modes {
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tic-tac-button {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+
+  .score-heading{
+    font-size: 1.4rem;
+  }
+
+  .scoreboard {
+    font-size: 0.9rem;
+  }
+
+  .game-status {
+    font-size: 1.2rem;
+  }
+
+  .reset {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.7rem;
+  }
+
+  .modes {
+    font-size: 1rem;
+    padding: 0.7rem 0.9rem;
+  }
+}
